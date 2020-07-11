@@ -16,14 +16,12 @@ html{
 }
 
 #icons{
-    border-radius: 0 50px 0 0;
-    height: 250px;
-
+    border-radius: 5px 50px 5px 5px;
+    /* height: 200px; */
     text-align: center;
+    background-color: hsl(228, 56%, 26%);
 }
-#test{
-    width: 100%;
-}
+
 
 /* for the desktop version, everything below */
 @media(min-width: 576px){
@@ -36,4 +34,29 @@ html{
         background-position: bottom;
     }
 }
-  
+
+
+.background_Icons{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 5px 5px 5px 5px; 
+}
+.red{
+    background-color: red;
+
+    height: 70px;
+    text-align: center;
+    padding-top: 25px;
+
+    
+}
+
+.outside{
+    position:relative;
+}
+.inside{
+    position:absolute;
+    top:50%;
+    bottom:50%;
+    transform:translate(-50%, -50%);
+}
+
