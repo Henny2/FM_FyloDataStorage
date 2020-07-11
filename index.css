@@ -3,7 +3,7 @@ html{
 }
 
 /* everything for the mobile version here */
-@media(max-width: 576px){
+@media(max-width: 375px){
     body{
         background-image: url("images/bg-mobile.png"); 
         background-color: hsl(229, 57%, 11%); 
@@ -11,6 +11,7 @@ html{
         background-size: auto;
         height: 100%;
         background-position: bottom;
+       
         
     }
 }
@@ -24,7 +25,7 @@ html{
 
 
 /* for the desktop version, everything below */
-@media(min-width: 576px){
+@media(min-width: 375px){
     body{
         background-image: url("images/bg-desktop.png");
         background-color: hsl(229, 57%, 11%);
@@ -42,7 +43,6 @@ html{
 }
 .red{
     background-color: red;
-
     height: 70px;
     text-align: center;
     padding-top: 25px;
@@ -59,4 +59,73 @@ html{
     bottom:50%;
     transform:translate(-50%, -50%);
 }
+#progressBar{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 10px 10px 10px; 
+}
+#speechbubble{
+    background-color: white;
+    border-radius: 10px 10px 10px 10px; 
+    color: hsl(229, 57%, 11%); ;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+#speechbubble2{
+    background-color: white;
+    border-radius: 10px 10px 10px 10px; 
+    color: hsl(229, 57%, 11%); ;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+}
 
+#grey_small{
+    color: grey;
+    font-size: 10px;
+}
+
+#textBox{
+    color:white;
+    font-weight: lighter;
+}
+
+progress{
+    /* background-color: pink; */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    
+  }
+
+progress[value]::-webkit-progress-value {
+    background-image:
+    -webkit-linear-gradient(transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                            rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, 
+                            rgba(255, 255, 255, .25), 
+                            rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+
+      border-radius: 10px; 
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+  }
+  
+  #container_all{
+      margin-top: -50px;
+  }
+ #label1000{
+     text-align: right;
+ }
+ .labels{
+     color: white;
+     font-weight: lighter;
+ }
