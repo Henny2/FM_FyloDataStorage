@@ -82,7 +82,7 @@ html{
     margin: 0 auto;
 }
 
-#grey_small{
+.grey_small{
     color: grey;
     font-size: 10px;
 }
